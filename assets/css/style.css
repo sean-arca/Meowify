@@ -1,0 +1,32 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffdb42;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0px; 
+}
+
+/* Jumbotron */
+#title {
+    font-family: 'Pacifico', serif;
+    padding-bottom: 5px;
+}
+
+.jumbotron {
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+#logo-image {
+    position: absolute;
+    width: 20%;
+    top: 20px;
+    right: 20px;
+}
