@@ -30,3 +30,14 @@ body {
     top: 20px;
     right: 20px;
 }
+
+/* Form */
+form {
+    padding: 0 50px;
+}
+
+legend {
+    font-family: 'Pacifico', serif;
+    font-size: 1em;
+    border-bottom: 0px;
+}
