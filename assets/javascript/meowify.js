@@ -18,13 +18,32 @@ function showGifBtn () {
     };
 };
 
-// Add new Button on input
+// Function to add a new button from input
+function addGifBtn () {
+    // On click when button pressed
+    $("#addGif").on("click", function() {
+        // Create a variable to grab the input value from the textbox
+        var addCat = $("#catgif-input").val().trim();
+        // If statement so no blank buttons
+        if (addCat == "") {
+            return false;
+        };
+        // Push the value to array and add cat to the end of it
+        catWords.push(addCat + " " + "cat");
+    
+        showGifBtn();
+        return false;
+
+        $("#catgif-input").reset();
+    });
+};
 
 // Display GIFs (thru GIPHY API)
 
 // On click pause/unpause
 
 showGifBtn();
+addGifBtn();
 
 });
 
