@@ -43,6 +43,11 @@ legend {
 }
 
 /* Buttons */
+#gifButtons-div {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .btn {
     margin: 3px;
     background-color: #eee;
