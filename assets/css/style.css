@@ -61,3 +61,9 @@ legend {
     font-weight: 600px;
     color: #fff;
 }
+
+/* GIFs */
+.giphy {
+    float: left;
+    margin: 3px;
+}
