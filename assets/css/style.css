@@ -20,6 +20,7 @@ body {
     padding: 10px 15px;
     width: 100%;
     border-radius: 0px;
+    border-color: #ffdb42;
     position: relative;
     overflow: hidden;
 }
@@ -27,7 +28,7 @@ body {
 #logo-image {
     position: absolute;
     width: 20%;
-    top: 20px;
+    top: 10%;
     right: 20px;
 }
 
@@ -67,3 +68,52 @@ legend {
     float: left;
     margin: 3px;
 }
+
+ /*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px) {
+    #logo-image {
+        top: 5%;
+        right: 60px
+    }
+}
+
+@media only screen and (max-width : 1200px) {
+    #logo-image {
+        top: 10%;
+        right: 60px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #logo-image {
+        top: 25%;
+        right: 30px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #logo-image {
+        top: 40%;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #logo-image {
+        top: 55%;
+        right: 10px;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    #logo-image {
+        top: 78%;
+        right: 0px;
+    }
+}
+          
