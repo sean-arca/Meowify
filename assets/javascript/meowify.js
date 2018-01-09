@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
 // -- Global Variables --
 var catWords = ["funny cat", "taco cat", "nyan cat", "cute cat", "party cat", "grumpy cat", "fat cat", "sad cat", "angry cat", "lazy cat"];
 
@@ -24,7 +24,7 @@ showGifBtn();
 
 // -- On Click Events --
 // On click to add new button
-$("#addGif").on("click", function() {
+$(document).on("click", "#addGif", function() {
 
     // Create a variable to grab the input value from the textbox
     var addCat = $("#catgif-input").val().trim();
@@ -50,8 +50,8 @@ $("#addGif").on("click", function() {
 });
 
 // On click to display GIFs (thru GIPHY API)
-$(".catWord").on("click", function() {
-
+$(document).on("click", ".catWord", function() {
+    
     // Create variable to get data-name on button clicked
     var cat = $(this).attr("data-name");
     console.log(cat);
