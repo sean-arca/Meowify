@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 // -- Global Variables --
-var catWords = ["funny cat", "taco cat", "nyan cat", "cute cat", "party cat", "grumpy cat", "fat cat", "sad cat", "angry cat", "lazy cat"];
+var catWords = ["funny cat", "taco cat", "nyan cat", "cute cat", "party cat", "grumpy cat", "fat cat", "sad cat", "angry cat", "lazy cat", "crazy cat"];
 
 // -- Functions --
 // Function to display Buttons for GIFs
@@ -28,6 +28,15 @@ $(document).on("click", "#addGif", function() {
 
     // Create a variable to grab the input value from the textbox
     var addCat = $("#catgif-input").val().trim();
+    
+    // Create a variable to see if input includes the word "cat"
+    var noCat = addCat.includes("cat");
+
+    // If statement if cat is in word
+    if (noCat == true) {
+        alert("Remove cat from word.");
+        return false;
+    };
 
     // If statement so no blank buttons
     if (addCat == "") {
