@@ -57,7 +57,7 @@ $(document).on("click", ".catWord", function() {
     console.log(cat);
 
     // GIPHY Query URL
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cat + "&api_key=dc6zaTOxFJmzC&limit=25";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + cat + "&api_key=XE6bJJJbGYXijfel2wo1jR4OsEUgCmJl&limit=25";
     console.log(queryURL);
     
     // AJAX GET Request
@@ -127,6 +127,4 @@ $(document).on("click", ".image", function() {
         $(this).attr('data-state', 'still');
     }
 });
-
 });
-
